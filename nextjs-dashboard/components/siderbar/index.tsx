@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./sidebar.css";
+import "../../app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import MenuIcons from "./MenuIcons";
@@ -87,7 +88,7 @@ const Sidebar: React.FC = () => {
     return (
         <div className="sidebar-main">
             <div className="sidebar-top">
-                <Link href="/" className={`sidebar-menu`}>
+                <Link href="/" className={`sidebar-menu mt-1`}>
                     <Image
                         src="./images/brand.svg"
                         alt="abc"
@@ -108,27 +109,30 @@ const Sidebar: React.FC = () => {
                     <span>Home</span>
                 </Link>
             </div>
-            <div className="sidebar-middle">
-                {data.slice(1).map((item) => (
-                    <Link
-                        key={item.name}
-                        href={item.link}
-                        className={`sidebar-menu ${
-                            pathname === item.link ? "active" : ""
-                        }`}
-                    >
-                        <MenuIcons
-                            src={
-                                pathname === item.link
-                                    ? item.activeIcon
-                                    : item.icon
-                            }
-                            alt={item.name}
-                        />
-                        <span>{item.name}</span>
-                    </Link>
-                ))}
+            <div className="sidebar-middle invisibleScroller">
+                <div className="h-100">
+                    {data.slice(1).map((item) => (
+                        <Link
+                            key={item.name}
+                            href={item.link}
+                            className={`sidebar-menu ${
+                                pathname === item.link ? "active" : ""
+                            }`}
+                        >
+                            <MenuIcons
+                                src={
+                                    pathname === item.link
+                                        ? item.activeIcon
+                                        : item.icon
+                                }
+                                alt={item.name}
+                            />
+                            <span>{item.name}</span>
+                        </Link>
+                    ))}
+                </div>
             </div>
+
             <div className="sidebar-bottom">
                 <div className="sidebar-menu cursor-pointer">
                     <MenuIcons
