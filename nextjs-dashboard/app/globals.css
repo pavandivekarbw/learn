@@ -43,7 +43,8 @@
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Montserrat";
 }
 .app-sidebar {
     width: 100px;
@@ -52,5 +53,23 @@ body {
 }
 .app-content {
     width: calc(100% - 100px);
+    height: 100vh;
     background-color: #fbfbfb;
+}
+.app-card {
+    box-shadow: 1px 1px 20px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+}
+.home-alerts {
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.home-alerts > .alert {
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }

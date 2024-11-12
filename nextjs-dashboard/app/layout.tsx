@@ -26,6 +26,24 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+                    rel="stylesheet"
+                ></link>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+                    rel="stylesheet"
+                ></link>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+                    rel="stylesheet"
+                ></link>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+                    rel="stylesheet"
+                ></link>
+            </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex`}
             >
