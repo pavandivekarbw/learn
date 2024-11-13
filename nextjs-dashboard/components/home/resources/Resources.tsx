@@ -12,7 +12,7 @@ const Resources: React.FC = () => {
                 <a
                     href="https://boardwalktech.atlassian.net/wiki/spaces/UW/overview"
                     target="_blank"
-                    className="text-blue-500 text-sm"
+                    className="text-blue-500 text-sm overflow-hidden text-ellipsis inline-block w-full"
                 >
                     https://boardwalktech.atlassian.net/wiki/spaces/UW/overview
                 </a>
@@ -23,7 +23,7 @@ const Resources: React.FC = () => {
                 <a
                     href="https://bwt.servicedesk.boardwalktech.com/"
                     target="_blank"
-                    className="text-blue-500 text-sm"
+                    className="text-blue-500 text-sm overflow-hidden text-ellipsis inline-block w-full"
                 >
                     https://bwt.servicedesk.boardwalktech.com/
                 </a>
@@ -34,7 +34,7 @@ const Resources: React.FC = () => {
                 <a
                     href="https://bwt.servicedesk.boardwalktech.com/"
                     target="_blank"
-                    className="text-blue-500 text-sm"
+                    className="text-blue-500 text-sm overflow-hidden text-ellipsis inline-block w-full"
                 >
                     https://bwt.servicedesk.boardwalktech.com/
                 </a>

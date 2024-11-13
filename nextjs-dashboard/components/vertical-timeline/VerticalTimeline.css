@@ -1,0 +1,23 @@
+.timeline-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: calc(100% - 50px);
+}
+
+.timeline {
+    display: flex;
+    min-height: 80px;
+}
+
+.timeline-date {
+    width: 47.5%;
+}
+
+.timeline-line {
+    width: 5%;
+}
+
+.timeline-content {
+    width: 47.5%;
+}
